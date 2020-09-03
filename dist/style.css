@@ -1,0 +1,50 @@
+#grid{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,1fr);
+	
+	
+}
+#ingredient{
+	margin-bottom: 4em;
+}
+
+.imgs{
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+}
+
+.recip{
+	width: 25em;
+	height: 45em;
+	margin-bottom: 200px;
+	display: inline-block;
+	margin: 33px;
+	background-color: wheat;
+		
+	
+	
+}
+
+.maxmin{
+	margin-left: 100px;
+	max-width: 180px;
+	text-align: center;
+}
+
+.link{
+    text-align: center;
+    max-width: 150px;
+   
+}
+
+.ingredients{
+	text-align: center;
+	max-width: 390px;
+}
+
+.imgs{
+	width: 100px;
+	height: 100px;
+}

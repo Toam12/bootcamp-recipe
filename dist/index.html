@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<script id="template-ingredient" type="text/x-handlebars-template" >
+	<div id="grid">
+	{{#each data}}
+	<div class="recip" >
+		<div class="maxmin" ><h1>{{title}}</h1> <br> <button id="imgs"> <img  class="imgs"  src={{thumbnail}} alt=""></button> <p class="ingredients">{{ingredients}} </p> <br> <p class="link" ><a href={{href}}>{{title}} video </a></p> <br> </div>
+		</div>
+		
+	{{/each}}
+	</script>
+	</div>
+	
+
+	<input id="ingredient" type="text">
+	<button id="search" >Search!</button>
+	<div id="container"></div>
+	<script src="./jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+	<script src="Renderer.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
